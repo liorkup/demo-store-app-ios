@@ -31,26 +31,30 @@ class ViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let productDetailVC = segue.destination as? ProductTableViewController else {
-            fatalError("Unexpected destination: \(segue.destination)")
-        }
+        if(segue.identifier != "Settings") {
+            
+            guard let productDetailVC = segue.destination as? ProductTableViewController else {
+                fatalError("Unexpected destination: \(segue.destination)")
+            }
+            
+            switch(segue.identifier ?? "") {
+                
+            case "ShowBestSeller":
+                productDetailVC.section = "Best Sellers"
+                
+            case "ShowNewArrivals":
+                productDetailVC.section = "New Arrivals"
+            
+            case "ShowRecommended":
+                productDetailVC.section = "Just For You"
+                
+            default:
+                fatalError("Unexpected Segue Identifier; \(String(describing: segue.identifier))")
+            }
         
-        switch(segue.identifier ?? "") {
-            
-        case "ShowBestSeller":
-            productDetailVC.section = "Best Sellers"
-            
-        case "ShowNewArrivals":
-            productDetailVC.section = "New Arrivals"
-        
-        case "ShowRecommended":
-            productDetailVC.section = "Just For You"
-            
-        default:
-            fatalError("Unexpected Segue Identifier; \(String(describing: segue.identifier))")
         }
-    
     }
+    
 
 }
 

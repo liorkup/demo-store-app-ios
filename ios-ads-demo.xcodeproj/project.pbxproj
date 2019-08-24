@@ -17,6 +17,7 @@
 		B53BC04420887F66000DE9F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B53BC04320887F66000DE9F0 /* Main.storyboard */; };
 		B53BC06620889B8F000DE9F0 /* ProductDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53BC06520889B8F000DE9F0 /* ProductDetailsViewController.swift */; };
 		B53BC0682088B044000DE9F0 /* MockItemProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53BC0672088B044000DE9F0 /* MockItemProvider.swift */; };
+		F1AF87122311745100CE65D9 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1AF87102311739F00CE65D9 /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		B53BC04320887F66000DE9F0 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		B53BC06520889B8F000DE9F0 /* ProductDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailsViewController.swift; sourceTree = "<group>"; };
 		B53BC0672088B044000DE9F0 /* MockItemProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockItemProvider.swift; sourceTree = "<group>"; };
+		F1AF87102311739F00CE65D9 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +77,7 @@
 				B53BC04120887EB7000DE9F0 /* ProductTableViewController.swift */,
 				B53BC06520889B8F000DE9F0 /* ProductDetailsViewController.swift */,
 				B53BC0672088B044000DE9F0 /* MockItemProvider.swift */,
+				F1AF87102311739F00CE65D9 /* SettingsViewController.swift */,
 			);
 			path = "ios-ads-demo";
 			sourceTree = "<group>";
@@ -158,6 +161,7 @@
 				B53BC0682088B044000DE9F0 /* MockItemProvider.swift in Sources */,
 				B53BC03E20887E20000DE9F0 /* Product.swift in Sources */,
 				B53BC04220887EB7000DE9F0 /* ProductTableViewController.swift in Sources */,
+				F1AF87122311745100CE65D9 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
