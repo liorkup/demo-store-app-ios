@@ -85,23 +85,24 @@
         <scene sceneID="3av-wT-4d0">
             <objects>
                 <viewController id="6lt-iy-b6L" customClass="SettingsViewController" customModule="ios_ads_demo" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="slJ-zT-wE6" customClass="Se">
+                    <view key="view" contentMode="scaleToFill" id="slJ-zT-wE6">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="L4g-3c-uhG">
-                                <rect key="frame" x="125" y="137" width="125" height="32"/>
+                                <rect key="frame" x="88" y="137" width="203" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <segments>
-                                    <segment title="Male"/>
-                                    <segment title="Female"/>
+                                    <segment title="Small"/>
+                                    <segment title="Medium"/>
+                                    <segment title="Large"/>
                                 </segments>
                                 <connections>
-                                    <action selector="genderSelect:forEvent:" destination="6lt-iy-b6L" eventType="valueChanged" id="6yB-tn-NS4"/>
+                                    <action selector="sizeSelect:" destination="6lt-iy-b6L" eventType="valueChanged" id="Rey-Bb-Y69"/>
                                 </connections>
                             </segmentedControl>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Gender:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9zT-pj-rGk">
-                                <rect key="frame" x="36" y="142" width="62" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Size" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9zT-pj-rGk">
+                                <rect key="frame" x="36" y="142" width="33" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -112,7 +113,7 @@
                         <viewLayoutGuide key="safeArea" id="p8R-91-M3h"/>
                     </view>
                     <connections>
-                        <outlet property="gender" destination="L4g-3c-uhG" id="T81-8F-equ"/>
+                        <outlet property="sizeSelector" destination="L4g-3c-uhG" id="zkd-eQ-PxL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dTQ-kA-UX3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
