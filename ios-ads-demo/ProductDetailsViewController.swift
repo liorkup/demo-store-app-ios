@@ -33,7 +33,7 @@ class ProductDetailsViewController: UIViewController {
             productName.text = product.name
             photo.image = product.photo
             price.text = String(format:"$%.2f", product.price)
-            // TODO 打点浏览商品 AnalyticsEventViewItem 事件
+            // TODO implement AnalyticsEventViewItem event
             
         }
     }
@@ -44,7 +44,7 @@ class ProductDetailsViewController: UIViewController {
     }
     
     @IBAction func purchase(_ sender: UIButton) {
-        // TODO 打点购买商品 AnalyticsEventEcommercePurchase 事件
+        // TODO implement AnalyticsEventEcommercePurchase event
         
         let alert = UIAlertController(title: "Thank You", message: "Your purchase was successful", preferredStyle: UIAlertControllerStyle.alert)
         alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { action in}))

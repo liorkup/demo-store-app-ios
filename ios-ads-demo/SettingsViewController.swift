@@ -23,6 +23,7 @@ class SettingsViewController: UIViewController {
     
     @IBAction func genderSelect(_ sender: UISegmentedControl, forEvent event: UIEvent) {
         UserDefaults.standard.set(sender.selectedSegmentIndex, forKey: "gender")
+        //TODO implement Gender User Property
         
     }
     
