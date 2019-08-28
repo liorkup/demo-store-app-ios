@@ -11,6 +11,7 @@ import UIKit
 class SettingsViewController: UIViewController {
     
     let sizeKey = "size";
+    let sizes = ["Small", "Medium", "Large"]
     
 
     @IBOutlet weak var sizeSelector: UISegmentedControl!
@@ -34,9 +35,5 @@ class SettingsViewController: UIViewController {
         //TODO implement Gender User Property
     }
     
-    
-    enum Size {
-        case m, s, l
-    }
 
 }
