@@ -21,7 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		B53BC02820887DAD000DE9F0 /* ios-ads-demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-ads-demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B53BC02820887DAD000DE9F0 /* iosadsdemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iosadsdemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B53BC02B20887DAD000DE9F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B53BC02D20887DAD000DE9F0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B53BC03220887DAD000DE9F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -58,7 +58,7 @@
 		B53BC02920887DAD000DE9F0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B53BC02820887DAD000DE9F0 /* ios-ads-demo.app */,
+				B53BC02820887DAD000DE9F0 /* iosadsdemo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -85,9 +85,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B53BC02720887DAD000DE9F0 /* ios-ads-demo */ = {
+		B53BC02720887DAD000DE9F0 /* iosadsdemo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B53BC03A20887DAD000DE9F0 /* Build configuration list for PBXNativeTarget "ios-ads-demo" */;
+			buildConfigurationList = B53BC03A20887DAD000DE9F0 /* Build configuration list for PBXNativeTarget "iosadsdemo" */;
 			buildPhases = (
 				B53BC02420887DAD000DE9F0 /* Sources */,
 				B53BC02520887DAD000DE9F0 /* Frameworks */,
@@ -97,9 +97,9 @@
 			);
 			dependencies = (
 			);
-			name = "ios-ads-demo";
+			name = iosadsdemo;
 			productName = "ios-ads-demo";
-			productReference = B53BC02820887DAD000DE9F0 /* ios-ads-demo.app */;
+			productReference = B53BC02820887DAD000DE9F0 /* iosadsdemo.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -118,7 +118,7 @@
 					};
 				};
 			};
-			buildConfigurationList = B53BC02320887DAD000DE9F0 /* Build configuration list for PBXProject "ios-ads-demo" */;
+			buildConfigurationList = B53BC02320887DAD000DE9F0 /* Build configuration list for PBXProject "iosadsdemo" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -131,7 +131,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B53BC02720887DAD000DE9F0 /* ios-ads-demo */,
+				B53BC02720887DAD000DE9F0 /* iosadsdemo */,
 			);
 		};
 /* End PBXProject section */
@@ -293,7 +293,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "ios-ads-demo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.gta.ios-ads-demo";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gta.iosadsdemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -307,7 +307,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "ios-ads-demo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.gta.ios-ads-demo";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gta.iosadsdemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -317,7 +317,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B53BC02320887DAD000DE9F0 /* Build configuration list for PBXProject "ios-ads-demo" */ = {
+		B53BC02320887DAD000DE9F0 /* Build configuration list for PBXProject "iosadsdemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B53BC03820887DAD000DE9F0 /* Debug */,
@@ -326,7 +326,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B53BC03A20887DAD000DE9F0 /* Build configuration list for PBXNativeTarget "ios-ads-demo" */ = {
+		B53BC03A20887DAD000DE9F0 /* Build configuration list for PBXNativeTarget "iosadsdemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B53BC03B20887DAD000DE9F0 /* Debug */,
