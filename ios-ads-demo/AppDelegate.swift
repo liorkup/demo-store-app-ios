@@ -17,6 +17,7 @@
 //  Created by wentaoli on 5/25/19.
 
 import UIKit
+import Firebase
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -25,9 +26,25 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         //TODO implement Firebase.
+        FirebaseApp.configure()
+        ddl()
         return true
     }
-
+    
+    func ddl() {
+        let launchedBefore = UserDefaults.standard.bool(forKey: "launchedBefore")
+        if !launchedBefore
+        {
+            UserDefaults.standard.set(true, forKey: "launchedBefore")
+            GoogleAdsACService.app.adToAction(processAction: {(action : String?) in
+                guard action != nil else {
+                    return;
+                }
+                print(action!)
+            });
+        }
+    }
+    
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
         // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.
