@@ -27,22 +27,31 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         //TODO implement Firebase.
         FirebaseApp.configure()
-        ddl()
+        
+        if !UserDefaults.standard.bool(forKey: "launchedBefore")
+        {
+            UserDefaults.standard.set(true, forKey: "launchedBefore")
+            GoogleAdsACService.app.adToAction(processAction: processActionExample)
+        }
+        
         return true
     }
     
-    func ddl() {
-        let launchedBefore = UserDefaults.standard.bool(forKey: "launchedBefore")
-        if !launchedBefore
-        {
-            UserDefaults.standard.set(true, forKey: "launchedBefore")
-            GoogleAdsACService.app.adToAction(processAction: {(action : String?) in
-                guard action != nil else {
-                    return;
-                }
-                print(action!)
-            });
+
+    
+    func processActionExample (action : String) {
+        
+        guard let product = MockItemProvider.all()[action.lowercased()] else {
+            return
         }
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: nil);
+        let viewController: ProductDetailsViewController = storyboard.instantiateViewController(withIdentifier: "productDetails") as! ProductDetailsViewController;
+
+        viewController.product = product
+        // Then push that view controller onto the navigation stack
+        let rootViewController = self.window!.rootViewController as! UINavigationController;
+        rootViewController.pushViewController(viewController, animated: true);
     }
     
     func applicationWillResignActive(_ application: UIApplication) {

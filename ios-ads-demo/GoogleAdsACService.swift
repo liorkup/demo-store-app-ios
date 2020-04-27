@@ -16,10 +16,10 @@ class GoogleAdsACService {
         return GoogleAdsACService()
     }()
     
-    public func adToAction (processAction: @escaping (_ action: String?) -> Void) {
+    public func adToAction (processAction: @escaping (_ action: String) -> Void) {
         
         let idfaOpt = identifierForAdvertising()
-        guard idfaOpt != nil, idfaOpt != VOID_IDFA, let idfa = idfaOpt else {
+        guard let idfa = idfaOpt, idfa != VOID_IDFA else {
             print("IDFA not available")
             return
         }
@@ -28,7 +28,7 @@ class GoogleAdsACService {
         
     }
     
-    private func getAdInfoCloudFunction(idfa: String, processAction: @escaping (_ action: String?) -> Void) {
+    private func getAdInfoCloudFunction(idfa: String, processAction: @escaping (_ action: String) -> Void) {
         let functions = Functions.functions()
         
         functions.httpsCallable("googleAdsConversionResult").call(["advertisingId": idfa, "lat" : 0]) { (result, error) in

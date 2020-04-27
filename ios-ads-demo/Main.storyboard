@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14835.7" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fkC-GO-DHb">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fkC-GO-DHb">
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14790.5"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -11,7 +11,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ios_ads_demo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="iosadsdemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -84,7 +84,7 @@
         <!--Settings View Controller-->
         <scene sceneID="3av-wT-4d0">
             <objects>
-                <viewController id="6lt-iy-b6L" customClass="SettingsViewController" customModule="ios_ads_demo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="6lt-iy-b6L" customClass="SettingsViewController" customModule="iosadsdemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="slJ-zT-wE6">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -109,7 +109,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="p8R-91-M3h"/>
                     </view>
                     <connections>
@@ -123,13 +123,13 @@
         <!--Product Table View Controller-->
         <scene sceneID="Zp9-T4-Rkr">
             <objects>
-                <tableViewController id="5y1-yv-Ipj" customClass="ProductTableViewController" customModule="ios_ads_demo" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="5y1-yv-Ipj" customClass="ProductTableViewController" customModule="iosadsdemo" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="150" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Wfl-Xn-KoQ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ProductTableViewCell" rowHeight="150" id="a7z-h8-Jre" customClass="ProductTableViewCell" customModule="ios_ads_demo" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ProductTableViewCell" rowHeight="150" id="a7z-h8-Jre" customClass="ProductTableViewCell" customModule="iosadsdemo" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="150"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="a7z-h8-Jre" id="E6S-tv-FQ1">
@@ -178,7 +178,7 @@
         <!--Product Details View Controller-->
         <scene sceneID="dDT-4B-6Gw">
             <objects>
-                <viewController id="GoK-lf-3Nn" customClass="ProductDetailsViewController" customModule="ios_ads_demo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="productDetails" id="GoK-lf-3Nn" customClass="ProductDetailsViewController" customModule="iosadsdemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="raA-Pb-LR4">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -247,10 +247,10 @@
             <point key="canvasLocation" x="-362" y="145"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="Icon" width="170.66667175292969" height="170.66667175292969"/>
-    </resources>
     <inferredMetricsTieBreakers>
         <segue reference="vmg-qV-yg0"/>
     </inferredMetricsTieBreakers>
+    <resources>
+        <image name="Icon" width="170.66667175292969" height="170.66667175292969"/>
+    </resources>
 </document>

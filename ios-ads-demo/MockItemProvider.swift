@@ -43,4 +43,12 @@ class MockItemProvider {
             Product(id:"9", name: "Black Cap", photo: UIImage(named: "blackhat"), price: 17.99, category: "HEADWEAR")!
         ]
     }
+    
+    static func all() -> [String : Product] {
+        return  (newArrivals() + bestSellers() + recommended()).reduce([String: Product]()) { (dict, product) -> [String: Product] in
+            var dict = dict
+            dict[product.name.lowercased().replacingOccurrences(of: " ", with: "")] = product
+            return dict
+        }
+    }
 }
