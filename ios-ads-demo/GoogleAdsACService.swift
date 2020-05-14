@@ -31,7 +31,7 @@ class GoogleAdsACService {
     private func getAdInfoCloudFunction(idfa: String, processAction: @escaping (_ action: String) -> Void) {
         let functions = Functions.functions()
         
-        functions.httpsCallable("googleAdsConversionResult").call(["advertisingId": idfa, "lat" : 0]) { (result, error) in
+        functions.httpsCallable("adToAction").call(["advertisingId": idfa, "lat" : 0]) { (result, error) in
           if let error = error as NSError? {
             if error.domain == FunctionsErrorDomain {
               let message = error.localizedDescription
